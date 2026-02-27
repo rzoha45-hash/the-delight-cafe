@@ -1,0 +1,578 @@
+/* ===================== GOOGLE FONTS ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===================== VARIABLES ===================== */
+:root {
+    --primary-color: #0f0f0f;      /* Royal Black */
+    --secondary-color: #c5a059;    /* Liquid Gold */
+    --accent-color: #1a1a1a;       /* Deep Charcoal */
+    --white-color: #ffffff;
+    --text-muted: #a0a0a0;
+    
+    --site-max-width: 1200px;
+    --br-m: 0px; /* Sharp edges for a more premium/royal feel */
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* ===================== RESET & GLOBAL ===================== */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+html { scroll-behavior: smooth; }
+body { background: var(--primary-color); color: var(--white-color); line-height: 1.6; }
+ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+.section-content {
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section { padding: 100px 0; }
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Miniver', cursive;
+    color: var(--secondary-color);
+    margin-bottom: 60px;
+}
+
+/* ===================== HEADER & NAV ===================== */
+header {
+    position: fixed;
+    top: 0; width: 100%;
+    z-index: 1000;
+    background: rgba(15, 15, 15, 0.95);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.nav-logo .logo-text {
+    font-family: 'Miniver', cursive;
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.nav-menu { display: flex; gap: 30px; }
+.nav-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: var(--transition);
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover { color: var(--secondary-color); border-color: var(--secondary-color); }
+
+/* ===================== HERO SECTION ===================== */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #0f0f0f 100%);
+}
+
+.hero-section .section-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; /* Desktop Side-by-Side */
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-details .title { font-size: 4.5rem; font-family: 'Miniver', cursive; color: var(--secondary-color); }
+.hero-details .subtitle { font-size: 1.5rem; margin-top: 10px; font-weight: 300; }
+.hero-details .description { color: var(--text-muted); margin: 20px 0 40px; max-width: 500px; }
+
+.buttons { display: flex; gap: 20px; }
+.button {
+    padding: 15px 40px;
+    border: 1px solid var(--secondary-color);
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.order-now { background: var(--secondary-color); color: var(--primary-color); }
+.order-now:hover { background: transparent; color: var(--secondary-color); }
+
+.contact-us { color: var(--white-color); }
+.contact-us:hover { background: var(--white-color); color: var(--primary-color); border-color: var(--white-color); }
+
+/* ===================== TESTIMONIALS (FIXED) ===================== */
+.testimonials-section { background: var(--accent-color); }
+.swiper { width: 100%; padding-bottom: 50px; }
+.swiper-slide {
+    background: #222;
+    padding: 40px;
+    border: 1px solid #333;
+    text-align: center;
+    transition: var(--transition);
+}
+.swiper-slide-active { border-color: var(--secondary-color); transform: scale(1.05); }
+
+.user-image {
+    width: 100px; height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+    object-fit: cover;
+}
+
+/* ===================== RESPONSIVE (MOBILE) ===================== */
+@media (max-width: 900px) {
+    .hero-section .section-content { grid-template-columns: 1fr; text-align: center; }
+    .hero-details .title { font-size: 3rem; }
+    .buttons { justify-content: center; }
+    
+    .hamburger { display: block; cursor: pointer; color: var(--secondary-color); font-size: 1.5rem; }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0; right: -100%;
+        width: 70%; height: 100vh;
+        background: var(--primary-color);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+
+    
+    .nav-menu.active { right: 0; }
+}
+
+/* ===================== ROYAL DARK THEME ===================== */
+:root {
+    --primary-color: #0a0a0a;      /* Rich Obsidian */
+    --secondary-color: #c5a059;    /* Metallic Gold */
+    --accent-bg: #161616;          /* Deep Charcoal */
+    --text-white: #ffffff;
+    --text-muted: #b0b0b0;
+    --site-width: 1200px;
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+html { scroll-behavior: smooth; }
+body { background: var(--primary-color); color: var(--text-white); }
+
+/* --- Layout --- */
+.section-content { max-width: var(--site-width); margin: 0 auto; padding: 0 20px; }
+section { padding: 100px 0; }
+.section-title { 
+    text-align: center; 
+    font-family: 'Miniver', cursive; 
+    font-size: 3rem; 
+    color: var(--secondary-color);
+    margin-bottom: 60px;
+}
+
+/* --- Menu Section: Luxury Cards --- */
+.menu-section { background: var(--accent-bg); }
+.menu-list { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+}
+.menu-item {
+    background: #1f1f1f;
+    padding: 25px;
+    border: 1px solid rgba(197, 160, 89, 0.1);
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+.menu-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary-color);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.menu-image {
+    width: 200px; height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 3px solid var(--secondary-color);
+    padding: 10px;
+    object-fit: cover;
+}
+.menu-item .name { font-size: 1.4rem; color: var(--secondary-color); margin-bottom: 10px; }
+.menu-item .text { color: var(--text-muted); font-size: 0.9rem; }
+
+/* --- Testimonials (Swiper Fix) --- */
+.testimonials-section { background: var(--primary-color); }
+.swiper { padding-bottom: 60px; }
+.swiper-slide {
+    background: #1a1a1a;
+    padding: 40px;
+    border-bottom: 4px solid var(--secondary-color);
+    text-align: center;
+}
+.user-image {
+    width: 100px; height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+}
+
+/* --- Gallery Section (Grid) --- */
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+    gap: 20px;
+}
+.gallery-item {
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+}
+.gallery-image { 
+    width: 100%; height: 100%; 
+    object-fit: cover; 
+    transition: var(--transition);
+    filter: grayscale(40%);
+}
+.gallery-item:hover .gallery-image { transform: scale(1.1); filter: grayscale(0%); }
+
+/* --- Contact Section --- */
+.contact-section { background: var(--accent-bg); }
+.contact-section .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+.contact-form .form-input {
+    width: 100%;
+    background: #222;
+    border: 1px solid #333;
+    padding: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+.submit-button {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* --- Footer --- */
+footer {
+    padding: 50px 0;
+    text-align: center;
+    border-top: 1px solid #222;
+    background: var(--primary-color);
+}
+.footer-section .social-link {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin: 0 15px;
+}
+
+/* --- Responsive Desktop Adjustment --- */
+@media (max-width: 900px) {
+    .contact-section .section-content { grid-template-columns: 1fr; }
+    .gallery-list { grid-template-columns: repeat(2, 1fr); }
+    .hero-section .section-content { grid-template-columns: 1fr; text-align: center; }
+}
+
+/* --- Luxury About Section --- */
+.about-section {
+    background: var(--primary-color);
+    padding: 120px 0;
+}
+
+.about-section .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Side-by-side on desktop */
+    align-items: center;
+    gap: 80px;
+}
+
+/* The "Luxury" Image Frame */
+.about-image-wrapper {
+    position: relative;
+    padding: 20px;
+}
+
+.about-image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 90%;
+    border: 2px solid var(--secondary-color);
+    z-index: 1;
+    transition: var(--transition);
+}
+
+.about-image-wrapper .about-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    filter: sepia(20%) contrast(110%);
+    box-shadow: 20px 20px 0px -5px var(--accent-bg);
+}
+
+.about-image-wrapper:hover::before {
+    top: 20px;
+    left: 20px;
+}
+
+.about-details .text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    text-align: left; /* Better for luxury desktop layout */
+    margin-bottom: 30px;
+}
+
+/* --- Royal Footer --- */
+footer {
+    background: #050505;
+    padding: 80px 0 30px;
+    border-top: 1px solid rgba(197, 160, 89, 0.1);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-logo .logo-text {
+    font-family: 'Miniver', cursive;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.footer-links h4 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.footer-links ul li a:hover {
+    color: var(--secondary-color);
+    padding-left: 5px;
+}
+
+.social-link-list {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.copyright-text {
+    text-align: center;
+    color: #444;
+    padding-top: 30px;
+    border-top: 1px solid #111;
+    font-size: 0.8rem;
+}
+
+/* ===================== ROYAL NAVBAR STYLE ===================== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.95); /* Deep Dark Glass */
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+/* Logo Styling */
+.nav-logo .logo-text {
+    font-size: 2rem;
+    font-family: 'Miniver', cursive;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+}
+
+/* Desktop Menu */
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    color: #e0e0e0;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 8px 0;
+    position: relative;
+    transition: var(--transition);
+}
+
+/* Gold Underline Animation */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* ===================== MOBILE NAV OVERHAUL ===================== */
+@media screen and (max-width: 900px) {
+    /* Menu Open Button (Hamburger) */
+    #menu-open-button {
+        color: var(--secondary-color) !important;
+        font-size: 1.8rem;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hidden by default */
+        width: 280px;
+        height: 100vh;
+        background: #111; /* DARK background, not white */
+        flex-direction: column;
+        padding: 100px 40px;
+        gap: 35px;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+        border-left: 1px solid var(--secondary-color);
+        transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        z-index: 1001;
+    }
+
+    /* When menu is open */
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-link {
+        color: var(--white-color);
+        font-size: 1.2rem;
+        width: 100%;
+        border-bottom: 1px solid rgba(197, 160, 89, 0.1);
+        padding-bottom: 15px;
+    }
+
+    /* Close Button inside Mobile Menu */
+    #menu-close-button {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: var(--secondary-color);
+        font-size: 2rem;
+        display: block !important;
+    }
+}
+@media screen and (max-width: 900px) {
+    .nav-menu {
+        position: fixed;
+        right: -100%; /* Start off-screen */
+        transition: 0.4s ease;
+    }
+    .nav-menu.active {
+        right: 0; /* Slide in */
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* This prevents the navbar from covering your titles */
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(197, 160, 89, 0.4),
+        transparent
+    );
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.button:hover::before {
+    left: 100%;
+}
+
+.button:hover {
+    box-shadow: 0 0 15px var(--secondary-color);
+    transform: translateY(-2px);
+}

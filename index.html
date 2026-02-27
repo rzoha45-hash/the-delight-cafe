@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">The Delight Cafe</h2>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Best Coffee</h2>
+                    <h3 class="subtitle">Make Your Day Great with Our Special Coffee!</h3>
+                    <p class="description">
+                        Welcome to our Coffee Paradise, where every bean tells a story and every cup sparks joy.
+                    </p>
+                    <div class="buttons">
+                        <a href="#menu" class="button order-now">Order Now</a>
+                        <a href="#contact" class="button contact-us">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="image/coofee hero-section.png" alt="Coffee Image" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonials swiper-slide">
+                            <img src="image/user-1.jpg" alt="User" class="user-image">
+                            <h3 class="name">Sarah Johnson</h3>
+                            <i class="feedback">"From the courteous staff to the expertly prepared coffee, every aspect of this café demonstrates remarkable quality and care!"</i>
+                        </div>
+                        <div class="testimonials swiper-slide">
+                            <img src="image/user-2.jpg" alt="User" class="user-image">
+                            <h3 class="name">Daniel Foster</h3>
+                            <i class="feedback">"The menu is thoughtfully curated, and the overall dining experience reflects a commendable standard of excellence.!"</i>
+                        </div>
+                        <div class="testimonials swiper-slide">
+                            <img src="image/user-3.jpg" alt="User" class="user-image">
+                            <h3 class="name">Ethan Choi</h3>
+                            <i class="feedback">"The establishment provides a calm and professional environment, making it an ideal setting for both work and relaxation."</i>
+                        </div>
+                        <div class="testimonials swiper-slide">
+                            <img src="image/user-4.jpg" alt="User" class="user-image">
+                            <h3 class="name">Isabella Park</h3>
+                            <i class="feedback">"I was thoroughly impressed by the elegant interior design and the meticulous attention to detail in both presentation and flavor."</i>
+                        </div>
+                        <div class="testimonials swiper-slide">
+                            <img src="image/user-6.jpg" alt="User" class="user-image">
+                            <h3 class="name">William Anderson</h3>
+                            <i class="feedback">"The café offers an exceptional blend of refined ambiance, attentive service, and consistently high-quality beverages."</i>
+                        </div>
+                    </div> 
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item"><img src="image/galler-1-new.jpg" alt="Gallery" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="image/gallery-2.jpg" alt="Gallery" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="image/use thta.jpg" alt="Gallery" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="image/gallery-666.jpg" alt="Gallery" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="image/gallery-5.jpg" alt="Gallery" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="image/gallery-6.jpg" alt="Gallery" class="gallery-image"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info"><i class="fa-solid fa-location-crosshairs"></i><p>Velour Brew Café, 24 Kensington High Street, London W8 4PT, United Kingdom.</p></li>
+                    <li class="contact-info"><i class="fa-regular fa-envelope"></i><p>info@coffeewebsite.com</p></li>
+                    <li class="contact-info"><i class="fa-regular fa-phone"></i><p>(021) 459-25849815</p></li>
+                    <li class="contact-info"><i class="fa-regular fa-clock"></i><p>Monday – Thursday: 8:00 AM – 10:00 PM</p></li>
+                    <li class="contact-info"><i class="fa-regular fa-clock"></i><p>Friday – Saturday: 8:00 AM – 11:30 PM</p></li>
+                    <li class="contact-info"><i class="fa-regular fa-clock"></i><p>Sunday: Closed ☕</p></li>
+                    <li class="contact-info"><i class="fa-solid fa-globe"></i><p>www.velourbrewcafe.com</p></li>
+                </ul>
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="May we have your name, please?" class="form-input" required>
+                    <input type="email" placeholder="Kindly provide your email address" class="form-input" required>
+                    <textarea placeholder="Any special requests or comments?" class="form-input" required></textarea>
+                    <button class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="image/about-new.jpg" alt="About Image" class="about-image">
+                    <div class="about-details">
+                        <h2 class="section-title">About Us</h2>
+                        <p class="text">Coffee is an art crafted in every cup — a delicate balance of aroma, warmth, and richness that awakens the senses. From the moment the beans are carefully selected to the final pour, every step reflects dedication, passion, and tradition. The deep, comforting scent of freshly brewed coffee fills the air, inviting you into a world of smooth textures and bold flavors. More than just a beverage, coffee is a cherished ritual that inspires creativity, connection, and quiet moments of indulgence. Whether savored alone or shared with others, each sip is an experience that lingers, making every moment feel a little more meaningful and refined. ☕✨</p>
+                        <div class="social-link-list">
+                            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="image/ChatGPT Image Feb 9, 2026, 02_13_22 AM-hotttttttttt.png" alt="Hot Beverage" class="menu-image">
+                        <h3 class="name">Hot Beverages</h3>
+                        <p class="text">Steaming hot beverages carry a simple yet powerful comfort that soothes both body and mind. The gentle swirl of rising steam, the warmth of the cup in your hands, and the rich aroma that fills the air create a moment of calm in an otherwise busy day. Whether it’s freshly brewed coffee, creamy hot chocolate, or a fragrant cup of tea, these warm drinks have a way of wrapping you in coziness, lifting your mood, and making even the coldest moments feel inviting and peaceful.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="image/ChatGPT Image Feb 9, 2026, 02_13_47 AM-colddddddddd.png" alt="Cold Beverages" class="menu-image">
+                        <h3 class="name">Cold Beverages</h3>
+                        <p class="text">Cold beverages bring a refreshing burst of energy that cools, revitalizes, and delights with every sip. The chill of ice clinking in a glass, the smooth flow of a frosty drink, and the crisp flavors dancing on your tongue create an instant sense of refreshment. Whether it’s a creamy iced coffee, a sparkling lemonade, or a chilled tea, cold drinks offer a perfect escape from the heat, awakening your senses and leaving you feeling light, refreshed, and recharged.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="image/Cheeseburger, fries, and Pepsi combo.png" alt="Burger And French Fries" class="menu-image">
+                        <h3 class="name">Burger And French Fries</h3>
+                        <p class="text">A perfectly stacked burger paired with golden, crispy fries drenched in rich, flavorful sauce is the ultimate comfort indulgence. The soft, toasted bun holds together a juicy patty, melted cheese, and fresh toppings that burst with taste in every bite. Beside it, the hot, crunchy fries, deep in creamy or tangy sauce, add that irresistible contrast of texture and flavor. Together, they create a satisfying, messy, and utterly delicious experience that feels indulgent, comforting, and impossible to resist — the kind of meal that makes every bite pure happiness.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="image/gemini-refreshments.png" alt="Refreshments" class="menu-image">
+                        <h3 class="name">Refreshments</h3>
+                        <p class="text">From ice-cold chillers to steaming sips, our refreshments are designed to hit just right. Bold, flavorful, and irresistibly satisfying — every drink is a mini escape, a burst of energy, and a moment of pure refreshment all in one. Quench, revive, repeat.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="image/Gemini_Generated_Image_gbftp5gbftp5gbft-dessssssssssss.png" alt="Dessert" class="menu-image">
+                        <h3 class="name">Dreamy Chews</h3>
+                        <p class="text">A refined, delicate confection with a beautifully chewy exterior and a luxuriously creamy filling. Its subtle sweetness and elegant texture create a modern dessert experience that feels light, sophisticated, and irresistibly indulgent.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="image/Gemini_Generated_Image_combo.png" alt="Special Combo" class="menu-image">
+                        <h3 class="name">Big Bites</h3>
+                        <p class="text">A bold, over-the-top combo made for real food lovers — featuring a juicy loaded burger, crispy golden fries dripping in rich sauce, and a sweet mini dessert on the side. Every bite is a perfect mix of savory, crispy, creamy, and sweet, giving you that irresistible junk food satisfaction. It’s messy, indulgent, and insanely delicious — the kind of combo that hits different and leaves you craving more.</p>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+
+        <div id="preloader">
+            <div class="loader-content">
+                <i class="fa-solid fa-mug-hot"></i>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <p>Brewing your experience...</p>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="section-content">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <span class="logo-text">The Delight Cafe</span>
+                        <p>Crafting royal coffee experiences since 2024.</p>
+                        <div class="social-link-list">
+                            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Opening Hours</h4>
+                        <p>Mon - Fri: 08:00 - 22:00</p>
+                        <p>Sat - Sun: 10:00 - 00:00</p>
+                    </div>
+                </div>
+                <p class="copyright-text">© 2026 The Delight Cafe. All Royalty Reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
